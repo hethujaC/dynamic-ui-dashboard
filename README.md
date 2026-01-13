@@ -7,28 +7,30 @@ Header images are uploaded using **Cloudinary**.
 
 ---
 
-##  Features
+## Features
 
-- Edit Header title dynamically  
-- Upload Header image (Cloudinary integration)  
-- Edit Navbar links (label & URL)  
-- Edit Footer contact details  
-- Live preview of all changes  
-- Save data to backend  
-- Persistent data using localStorage  
-- Responsive UI built with Tailwind CSS  
+- Edit Header title dynamically
+- Upload Header image (Cloudinary integration)
+- Edit Navbar links (label & URL)
+- Edit Footer contact details
+- Live preview of all changes
+- Save data to backend
+- Persistent data using localStorage
+- Responsive UI built with Tailwind CSS
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 ### Frontend
+
 - React (Vite)
 - Tailwind CSS
 - Cloudinary (Image Upload)
 - LocalStorage
 
 ### Backend
+
 - Node.js
 - Express.js
 - CORS
@@ -49,18 +51,16 @@ root/
 ├── .gitignore
 └── README.md
 
-
-
 ---
 
 ## 🔐 Environment Variables
 
 ### Frontend (`frontend/.env`)
+
 Replace the values with your Cloudinary credentials.
 
 VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
 VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
-
 
 ---
 
@@ -70,12 +70,11 @@ VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
 
 git clone <your-repo-url>
 
-
 ### 2️⃣ Backend Setup
+
 cd backend
 npm install
 node server.js
-
 
 Backend runs on `http://localhost:5000`
 
@@ -87,22 +86,19 @@ cd frontend
 npm install
 npm run dev
 
-
 Frontend runs on `http://localhost:5173`
-
-
 
 ## 🎯 Project Purpose
 
 This project demonstrates:
-- Dynamic UI rendering  
-- React state management  
-- REST API integration  
-- File uploading with Cloudinary  
-- Persistent storage using localStorage  
+
+- Dynamic UI rendering
+- React state management
+- REST API integration
+- File uploading with Cloudinary
+- Persistent storage using localStorage
 
 Built as part of a **Full-Stack Developer Internship Assessment**
-
 
 ## 👨‍💻 Author
 
