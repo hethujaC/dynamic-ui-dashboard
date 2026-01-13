@@ -109,7 +109,7 @@ Built as part of a **Full-Stack Developer Internship Assessment**
 ### Dashboard
 ![Dashboard UI](screenshots/dashboard.png)
 
-### Dashboard
+### Footer
 ![Footer UI](screenshots/footer.png)
 
 ### Header Image Upload
