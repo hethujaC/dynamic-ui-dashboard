@@ -16,7 +16,6 @@ const Dashboard = ({
   const [uploading, setUploading] = useState(false);
   const [preview, setPreview] = useState(header.image || "");
 
-
   const handleImageChange = async (e) => {
     const file = e.target.files[0];
     if (!file) return;
@@ -73,7 +72,11 @@ const Dashboard = ({
           className="border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-indigo-400 outline-none mt-3"
         />
 
-        {uploading && <p className="text-sm text-white font-medium mt-2">Uploading image...</p>}
+        {uploading && (
+          <p className="text-sm text-white font-medium mt-2">
+            Uploading image...
+          </p>
+        )}
 
         {preview && (
           <img
@@ -129,7 +132,8 @@ const Dashboard = ({
           className="border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-indigo-400 outline-none mt-3"
         />
 
-        <input type="text"
+        <input
+          type="text"
           placeholder="Address"
           value={footer.address}
           onChange={(e) => setFooter({ ...footer, address: e.target.value })}

@@ -1,27 +1,27 @@
-import { useState, useEffect } from 'react'
-import Header from "./components/Header"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Dashboard from "./components/Dashboard"
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Dashboard from "./components/Dashboard";
 import { API_URL } from "./services/api";
 
 function App() {
   const [header, setHeader] = useState({
     title: "My Application",
-    image: ""
-  })
+    image: "",
+  });
 
   const [navbar, setNavbar] = useState([
-    { label: "Home", url: "#"},
-    { label: "About", url: "#"},
-    { label: "Contact", url: "#"}
-  ])
+    { label: "Home", url: "#" },
+    { label: "About", url: "#" },
+    { label: "Contact", url: "#" },
+  ]);
 
   const [footer, setFooter] = useState({
     email: "hello@gmail.com",
     phone: "+94 77 123 7547",
-    address: "Colombo, Sri Lanka"
-  })
+    address: "Colombo, Sri Lanka",
+  });
 
   useEffect(() => {
     const saved = localStorage.getItem("componentsData");
@@ -38,8 +38,7 @@ function App() {
     localStorage.setItem("componentsData", JSON.stringify(data));
   }, [header, navbar, footer]);
 
-
-    useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch(API_URL);
@@ -56,9 +55,6 @@ function App() {
     fetchData();
   }, []);
 
-
-
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header data={header} />
@@ -66,18 +62,18 @@ function App() {
 
       <main className="flex-1 p-6 bg-gray-300">
         <Dashboard
-        header={header}
-        setHeader={setHeader}
-        navbar={navbar}
-        setNavbar={setNavbar}
-        footer={footer}
-        setFooter={setFooter}
-         />
+          header={header}
+          setHeader={setHeader}
+          navbar={navbar}
+          setNavbar={setNavbar}
+          footer={footer}
+          setFooter={setFooter}
+        />
       </main>
 
-      <Footer data={footer}/>
+      <Footer data={footer} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
