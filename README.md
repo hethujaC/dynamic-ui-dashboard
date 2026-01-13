@@ -37,7 +37,7 @@ Header images are uploaded using **Cloudinary**.
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 root/
 ├── frontend/
@@ -53,7 +53,7 @@ root/
 
 ---
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 ### Frontend (`frontend/.env`)
 
@@ -64,31 +64,31 @@ VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️ Clone the repository
 
 git clone <your-repo-url>
 
-### 2️⃣ Backend Setup
+### 2️ Backend Setup
 
-cd backend
-npm install
+cd backend ||
+npm install ||
 node server.js
 
 Backend runs on `http://localhost:5000`
 
 ---
 
-### 3️⃣ Frontend Setup
+### 3️ Frontend Setup
 
-cd frontend
-npm install
+cd frontend ||
+npm install ||
 npm run dev
 
 Frontend runs on `http://localhost:5173`
 
-## 🎯 Project Purpose
+##  Project Purpose
 
 This project demonstrates:
 
@@ -103,3 +103,17 @@ Built as part of a **Full-Stack Developer Internship Assessment**
 ## 👨‍💻 Author
 
 **Hethuja C**
+
+##  Screenshots
+
+### Dashboard
+![Dashboard UI](screenshots/dashboard.png)
+
+### Dashboard
+![Footer UI](screenshots/footer.png)
+
+### Header Image Upload
+![Header Upload](screenshots/header-upload.png)
+
+### Live Preview
+![Live Preview](screenshots/live-preview.png)
